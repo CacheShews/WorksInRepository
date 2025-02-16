@@ -7,6 +7,12 @@
 <body>
 	<h1>Hello World</h1>
 	<button id="clickMeBtn">Click Me</button>
-	<p id="output"><p>
+	<p id="output"></p>
+
+	<script>
+		document.getElementById('clickMeBtn').addEventListener('click', function() {
+			document.getElementById('output').textContent = 'Button was clicked!';
+		});
+	</script>
 </body>
 </html>
