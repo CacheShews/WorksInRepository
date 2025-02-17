@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>First Web Project</title>
+</head>
+<body>
+    <h1>My first JavaScript webpage.</h1>
+    <button id="clickMeBtn">Click Me</button>
+
+    <script>
+        document.getElementById('clickMeBtn').addEventListener('click', function() {
+            console.log('Button was clicked! This message is in the console.');
+        });
+    </script>
+</body>
+</html>
