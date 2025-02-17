@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>First Web Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Project</title>
 </head>
 <body>
-    <h1>My first JavaScript webpage.</h1>
-    <button id="clickMeBtn">Click Me</button>
+    <h1>Welcome to my Updated Webpage!</h1> 
+    <p>Hello World. To view console output, press Ctrl+Shift+I.</p>
+
+    <button id="consoleBtn">Click Me</button> 
 
     <script>
-        document.getElementById('clickMeBtn').addEventListener('click', function() {
-            console.log('Button was clicked! This message is in the console.');
+        console.log("Hello World"); 
+
+        document.getElementById("consoleBtn").addEventListener("click", function() {
+            console.log("Button was clicked! This is logged in the console.");
         });
     </script>
 </body>
