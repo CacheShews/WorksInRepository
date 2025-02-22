@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Circle Calculator</title>
+</head>
+<body>
+    <h1>Welcome to the Circle Area Calculator</h1>
+    
+    <script>
+        // Ask the user for their first name and store it in the variable Fname.
+        let Fname = prompt("Please enter your first name:") || "Guest"; 
+
+        // After the user types in their name, display a welcome message that contains the name they entered.
+        alert("Welcome, " + Fname + "!");
+
+        // Create the constant piValue to store the value of Pi to 7 significant digits (3.1415926).
+        const piValue = 3.1415926;
+
+        // Ask the user to input their favorite number and store the value in a variable myFavNum
+        let myFavNum = prompt("Please enter your favorite number:");
+
+        // Convert myFavNum to a number
+        myFavNum = Number(myFavNum);
+
+        // Check if myFavNum is a valid number
+        if (isNaN(myFavNum) || myFavNum <= 0) {
+            document.write("Oops! That doesn't seem like a valid number. Please refresh and try again.");
+        } else {
+            // Calculate the area of a circle using the user’s favorite number as the radius
+            let myArea = piValue * Math.pow(myFavNum, 2);
+
+            // Display the contents of each variable to the webpage in a message
+            document.write("Hello " + Fname + ", you entered " + myFavNum + " as your favorite number. ");
+            document.write("If that was the radius of a circle, the circle’s area would be " + myArea.toFixed(2) + ".");
+        }
+    </script>
+</body>
+</html>
