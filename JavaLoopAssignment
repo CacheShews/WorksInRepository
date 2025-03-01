@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3 Loop Assignment</title>
+</head>
+<body>
+    <h1>Welcome to The Loop</h1>
+    
+    <script>
+        // Task 1: For loop checking odd/even numbers
+        for (let i = 0; i <= 10; i++) {
+            let type = (i % 2 === 0) ? "even" : "odd";
+            document.write(`Count ${i} is ${type}<br>`);
+        }
+
+        document.write("<br>");
+
+        // Task 2: Do While loop with user input
+        let myNum;
+        do {
+            myNum = parseInt(prompt("Enter a number between 5 and 20:"), 10);
+        } while (isNaN(myNum) || myNum < 5 || myNum > 20);
+
+        document.write("Loop counter:<br>");
+        let counter = 1;
+        do {
+            document.write(counter + "<br>");
+            counter++;
+        } while (counter <= myNum);
+
+        document.write("<br>");
+
+        // Task 3: Array with subjects
+        let subjects = ["Accounting", "Algebra", "Programming", "Art", "Data Analytics"];
+
+        document.write("Subjects:<br>");
+        subjects.forEach(subject => {
+            document.write(subject + "<br>");
+        });
+
+        document.write("<br>Subjects (comma-separated): " + subjects.join(", "));
+    </script>
+</body>
+</html>
+
+
