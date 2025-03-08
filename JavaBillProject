@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Tax Assignment</title>
+</head>
+<body>
+    <!-- Header -->
+    <h1>You Already Ate, Now Let's Calculate...</h1>
+
+    <!-- Total Bill Display -->
+    <p>Your total bill is: <span id="totalBill">$0.00</span></p>
+
+    <script>
+    // Function to validate service quality
+    function validateServiceQuality(serviceQuality) {
+        const validQualities = ["great", "ok", "poor"];
+        if (validQualities.includes(serviceQuality.toLowerCase())) {
+            return serviceQuality.toLowerCase();
+        } else {
+            alert("Invalid service quality entered. Please enter 'great', 'ok', or 'poor'.");
+            return null;
+        }
+    }
+
+    // Function to validate service amount
+    function validateServiceAmount(amount) {
+        if (isNaN(amount) || amount < 5 || amount > 500) {
+            alert("Invalid service amount. Please enter a value between $5.00 and $500.00.");
+            return null;
+        }
+        return parseFloat(amount);
+    }
+
+    // Function to calculate tip based on service quality
+    function calculateTip(amount, serviceQuality) {
+        let tipPercentage = {
+            "great": 0.20,
+            "ok": 0.15,
+            "poor": 0.10
+        }[serviceQuality];
+        return amount * tipPercentage;
+    }
+
+    // Function to calculate tax (assuming 7%)
+    function calculateTax(amount) {
+        return amount * 0.07;
+    }
+
+    // Function to get user input and display total
+    function main() {
+        let serviceAmount = prompt("Enter the service amount ($5.00 - $500.00):");
+        serviceAmount = validateServiceAmount(serviceAmount);
+        if (serviceAmount === null) return;
+
+        let serviceQuality = prompt("Enter the service quality (great, ok, poor):");
+        serviceQuality = validateServiceQuality(serviceQuality);
+        if (serviceQuality === null) return;
+
+        let tipAmount = calculateTip(serviceAmount, serviceQuality);
+        let taxAmount = calculateTax(serviceAmount);
+        let totalBill = serviceAmount + tipAmount + taxAmount;
+
+        alert(`For a service amount of $${serviceAmount.toFixed(2)}, the tip is $${tipAmount.toFixed(2)}, tax is $${taxAmount.toFixed(2)}, and your total bill is $${totalBill.toFixed(2)}.`);
+
+        // Update the total bill on the page
+        document.getElementById("totalBill").innerText = `$${totalBill.toFixed(2)}`;
+    }
+
+    main();
+    </script>
+
+</body>
+</html>
