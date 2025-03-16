@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cartoon Dog</title>
+    <title>Cartoon Kennel Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        #intro {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        #output {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>Welcome to The Cartoon Kennel Club!</h1>
+    <p id="intro">
+        Here you'll find details about some famous fictional dogs from animated TV shows.  
+    </p>
+
+    <div id="output"></div>
+
     <script>
     // Step 1: Create a literal object named myDog
     const myDog = {
@@ -35,12 +67,13 @@
     // Step 3: Create an instance of SimpleDog
     const myDogConst = new SimpleDog("Astro", "Great Dane", "The Jetsons", "I was the family dog in a cartoon about a family in the future.", "Ruff ruff!", false);
     
-    // Step 4: Display the output
-    console.log(myDog.describe());
-    console.log(myDogConst.myGreeting());
-
-    // Step 5: Call the myGreeting method to display the message
-    console.log(myDogConst.myGreeting());
+    // Step 4: Display the output on the webpage
+    document.getElementById("output").innerHTML = `
+        <h2>Meet the Dogs!</h2>
+        <p>${myDog.describe()}</p>
+        <p>${myDogConst.myGreeting()}</p>
+    `;
     </script>
+
 </body>
 </html>
