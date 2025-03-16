@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cartoon Dog</title>
+</head>
+<body>
+    <script>
+    // Step 1: Create a literal object named myDog
+    const myDog = {
+        name: "Scooby-Doo",
+        breed: "Great Dane",
+        tvShow: "Scooby-Doo, Where Are You!",
+        notes: "I solve mysteries with my friends and love Scooby Snacks!",
+        mySound: "Ruh-roh!", // Fixed property name
+        describe: function() {
+            return `Hello, my name is ${this.name}. When I bark, I say '${this.mySound}'. I starred in the TV show '${this.tvShow}'. My character was a ${this.breed}. ${this.notes}`;
+        }
+    };
+    
+    // Step 2: Create a constructor function for creating dog objects
+    function SimpleDog(name, breed, tvShow, notes, mySound, canTalk) {
+        this.name = name;
+        this.breed = breed;
+        this.tvShow = tvShow;
+        this.notes = notes;
+        this.mySound = mySound;
+        this.canTalk = canTalk;
+        this.myGreeting = function() {
+            return `Hello, my name is ${this.name}, when I bark I am not scary. I starred in the TV show '${this.tvShow}'. My character was a ${this.breed}. ${this.notes}`;
+        };
+    }
+    
+    // Step 3: Create an instance of SimpleDog
+    const myDogConst = new SimpleDog("Astro", "Great Dane", "The Jetsons", "I was the family dog in a cartoon about a family in the future.", "Ruff ruff!", false);
+    
+    // Step 4: Display the output
+    console.log(myDog.describe());
+    console.log(myDogConst.myGreeting());
+
+    // Step 5: Call the myGreeting method to display the message
+    console.log(myDogConst.myGreeting());
+    </script>
+</body>
+</html>
