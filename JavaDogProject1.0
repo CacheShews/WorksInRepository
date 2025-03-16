@@ -13,7 +13,7 @@
         breed: "Great Dane",
         tvShow: "Scooby-Doo, Where Are You!",
         notes: "I solve mysteries with my friends and love Scooby Snacks!",
-        mySound: "Ruh-roh!", // Fixed property name
+        mySound: "Ruh-roh!",
         describe: function() {
             return `Hello, my name is ${this.name}. When I bark, I say '${this.mySound}'. I starred in the TV show '${this.tvShow}'. My character was a ${this.breed}. ${this.notes}`;
         }
