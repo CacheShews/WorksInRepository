@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Kennel Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        #intro {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        #output {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to The Cartoon Kennel Club!</h1>
+    <p id="intro">
+        Here you'll find details about some famous fictional dogs from animated TV shows.  
+    </p>
+
+    <div id="output"></div>
+
+    <script>
+    // Constructor for creating dog objects
+    function CartoonDog(name, breed, tvShow, notes, mySound, canTalk) {
+        this.name = name;
+        this.breed = breed;
+        this.tvShow = tvShow;
+        this.notes = notes;
+        this.mySound = mySound;
+        this.canTalk = canTalk;
+        this.myGreeting = function() {
+            let talkMessage = this.canTalk ? "I can talk!" : "I cannot talk.";
+            return `Hello, my name is ${this.name}. When I bark, I say '${this.mySound}'. I starred in the TV show '${this.tvShow}'. My character was a ${this.breed}. ${this.notes} ${talkMessage}`;
+        };
+    }
+
+    // Creating multiple dog objects
+    const dogs = {
+        "Scooby-Doo": new CartoonDog("Scooby-Doo", "Great Dane", "Scooby-Doo, Where Are You!", "I solve mysteries with my friends and love Scooby Snacks!", "Ruh-roh!", true),
+        "Astro": new CartoonDog("Astro", "Great Dane", "The Jetsons", "I was the family dog in a cartoon about a family in the future.", "Ruff ruff!", false),
+        "Brian": new CartoonDog("Brian", "Labrador Retriever", "Family Guy", "I am an intelligent, talking dog who enjoys writing and drinking.", "Hey there!", true),
+        "Pluto": new CartoonDog("Pluto", "Bloodhound", "Disney Cartoons", "I am Mickey Mouse’s loyal pet and do not talk.", "Woof woof!", false)
+    };
+
+    // Display all dog details using a for...in loop
+    let outputHTML = "<h2>Meet the Dogs!</h2>";
+    for (let dog in dogs) {
+        outputHTML += `<p>${dogs[dog].myGreeting()}</p>`;
+    }
+    
+    document.getElementById("output").innerHTML = outputHTML;
+
+    // Prompt to select a dog
+    let selectedDog = prompt("Enter a dog’s name to learn more (Scooby-Doo, Astro, Brian, Pluto):");
+
+    if (selectedDog in dogs) {
+        alert(dogs[selectedDog].myGreeting());
+    } else {
+        alert("Sorry, that dog is not in our list. Please try again.");
+    }
+    </script>
+
+</body>
+</html>
