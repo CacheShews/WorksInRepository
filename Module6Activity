@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Labubu-pedia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>All About Labubu</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <img src="https://cdn.shopify.com/s/files/1/0863/7906/9713/articles/the_monsters_10-things-to-know-labubu1_b51a30dd-984b-402e-a207-8022d7c75f60.jpg?v=1745245602" alt="Labubu" style="width:100%; border-radius:10px;">
+    <p>Everything to know about Labubus:</p>
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#labubuandthemonsters">Labubu & The Monsters</a></li>
+      <li><a href="#labubu">Labubu</a></li>
+      <li><a href="#mokoko">Mokoko</a></li>
+      <li><a href="#pato">Pato</a></li>
+      <li><a href="#spooky">Spooky</a></li>
+      <li><a href="#tycoco">Tycoco</a></li>
+      <li><a href="#zimomo">Zimomo</a></li>
+      <li><a href="#yaya">Yaya</a></li>
+      <li><a href="#wheretobuythemonsters">Where to Buy The Monsters</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+
+    </ul>
+  </div>
+
+  <div data-role="footer">
+    <h4>Labubu-pedia © 2025</h4>
+  </div>
+</div>
+
+<!-- Labubu & The Monsters -->
+<div data-role="page" id="labubuandthemonsters">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Labubu & The Monsters</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Lately, the name on everyone's lips, hips and bag is Labubu. Although the group of fictional characters is officially called "The Monsters", Labubu, the first, most prominent, and most recognizable elf has become the face of the collective.</p>
+    <p>The full list of The Monsters are:</p>
+    <ol>
+      <li>Labubu</li>
+      <li>Mokoko</li>
+      <li>Pato</li>
+      <li>Spooky</li>
+      <li>Tycoco</li>
+      <li>Zimomo</li>
+      <li>Yaya</li>
+      <li>Pippo</li>
+      <li>Puca</li>
+      <li>Monster Boy</li>
+      <li>Vos</li>
+      
+    </ol>
+
+    <!-- Widget: Collapsible Panel -->
+    <div data-role="collapsible">
+      <h4>Fun Fact About The Monsters</h4>
+      <p>The Monsters were created by the artist Kasing Lung. Each character has a unique personality and backstory, with designs that blend cuteness and a touch of creepiness—perfect for collectors and toy lovers alike!</p>
+    </div>
+  </div>
+  <div data-role="footer">
+    <h4>Labubu-pedia</h4>
+  </div>
+</div>
+
+<!-- Character Pages (repeating pattern) -->
+<div data-role="page" id="labubu">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Labubu</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Labubu is a female elf character with pointy ears, serrated teeth and a mischievous smile.</p>
+    <img src="https://images.stockx.com/images/Pop-Mart-Labubu-The-Monsters-Tasty-Macarons-Toffee-Vinyl-Plush-Pendant.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1726243189" alt="Labubu" style="width:100%; border-radius:10px;">
+  </div>
+  <div data-role="footer">
+    <h4>Labubu-pedia</h4>
+  </div>
+</div>
+
+<div data-role="page" id="mokoko">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Mokoko</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Part of Labubu's tribe of Monsters, Mokoko has pastel pink fur, a white belly, curly eyelashes and a heart-shape nose.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqhbEbhXJ5MHEwz8n5cMRhHWx6aQ6jlkFPg&s" alt="Mokoko" style="width:100%; border-radius:10px;">
+  </div>
+  <div data-role="footer">
+    <h4>Labubu-pedia</h4>
+  </div>
+</div>
+
+<div data-role="page" id="pato">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Pato</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Pato is characterized by his droopy ears.</p>
+    <img src="https://i.ebayimg.com/images/g/vDgAAOSwbd9mzDZk/s-l1200.jpg" alt="Pato" style="width:100%; border-radius:10px;">
+  </div>
+  <div data-role="footer">
+    <h4>Labubu-pedia</h4>
+  </div>
+</div>
+
+<div data-role="page" id="spooky">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Spooky</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Spooky is an elf that resembles a dumpling.</p>
+    <img src="https://i.ebayimg.com/images/g/5l4AAOSwpVJhb0Dl/s-l1600.jpg" alt="Spooky" style="width:100%; border-radius:10px;">
+  </div>
+  <div data-role="footer">
+    <h4>Labubu-pedia</h4>
+  </div>
+</div>
+
+<div data-role="page" id="tycoco">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Tycoco</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Tycoco is the more unique monster, Tycoco is a vegetarian and has a skeleton design.</p>
+    <img src="https://images.prestigeonline.com/wp-content/uploads/sites/5/2024/09/21145019/kasinglung_tycocowindup__71627-806x806-1.jpeg" alt="Tycoco" style="width:100%; border-radius:10px;">
+  </div>
+  <div data-role="footer">
+    <h4>Labubu-pedia</h4>
+  </div>
+</div>
+
+<div data-role="page" id="zimomo">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Zimomo</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Zimomo is leader of The Monsters, has a spiked tail, and round face.</p>
+    <img src="https://cdn.prod.website-files.com/65d92e68000f827cfefa05e5/681e7780d95b4469693b912c_7C6DA077-44D7-438A-B441-77BD4DC12943.avif" alt="Zimomo style="width:100%; border-radius:10px;">
+  </div>
+  <div data-role="footer">
+    <h4>Labubu-pedia</h4>
+  </div>
+</div>
+
+<div data-role="page" id="yaya">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Yaya</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Yaya is characterized by pointed horns and a sly smile.</p>
+    <img src="https://d2cva83hdk3bwc.cloudfront.net/pop-mart-yaya-labubu-super-group-of-the-monsters-set-a-blind-box-1-n.jpg" alt="Yaya" style="width:100%; border-radius:10px;">
+  </div>
+  <div data-role="footer">
+    <h4>Labubu-pedia</h4>
+  </div>
+</div>
+
+
+
+<!-- Where to Buy The Monsters -->
+<div data-role="page" id="wheretobuythemonsters">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Where to Buy The Monsters</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>The Monsters can be purchased from the following retailers and resellers:</p>
+    <ul data-role="listview" data-filter="true" data-inset="true">
+      <li>Pop Mart Official Website</li>
+      <li>StockX</li>
+      <li>eBay</li>
+      <li>AmiAmi</li>
+      <li>Amazon</li>
+      <li>Local Designer Toy Shops</li>
+    </ul>
+  </div>
+  <div data-role="footer">
+    <h4>Labubu-pedia</h4>
+  </div>
+</div>
+
+<!-- Contact -->
+<div data-role="page" id="contact">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Contact</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>To contact us, please fill out the form below:</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div data-role="footer">
+    <h4>Labubu-pedia</h4>
+  </div>
+</div>
+
+
+</body>
+</html>
