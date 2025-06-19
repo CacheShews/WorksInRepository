@@ -2,7 +2,7 @@
 The site that I created for the duration of the course activity is titled "All About Labubu". Labubus are a current trend in society similar to Beanie Babies in the 90s that many people may turn to the internet to understand. The site explains the character's lore, counterparts and places where you can buy them. 
 ---
 # Site URL 
-
+https://sotd.us/alasrsimmons/alsimmons:activity:module06.html 
 ---
 # Site Map / Structure 
 Home
